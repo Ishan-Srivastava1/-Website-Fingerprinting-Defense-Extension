@@ -1,6 +1,6 @@
 # Adaptive Padding to Defend Against Website Fingerprinting
 
-An implementation of an **adaptive padding algorithm** to combat website fingerprinting attacks, ensuring robust privacy without compromising usability.
+An implementation of an adaptive padding algorithm by Ishan Srivastava and Vikranth Nara, two students from the University of Virginia's School of Engineering, to combat website fingerprinting attacks, ensuring robust privacy without compromising usability.
 
 ---
 
@@ -85,28 +85,21 @@ The extension was tested on websites like **CNN** and demonstrated:
 - Randomized dummy packets that significantly reduced identifiable patterns.
 - Real-time metrics validating the interception and obfuscation of traffic.
 
-### Metrics Dashboard
-![Metrics Dashboard](path/to/dashboard-image.png)
-*Figure 1: Real-time metrics showing dummy packets sent and intercepted.*
-
 ---
 
 ## Demo
 
 Watch the extension in action:
-- **[Video Demo](#)**
+
+[Video Demo on Google Drive](https://drive.google.com/file/d/1RCfhdpTTXbMISwSKdzAejSZ_0PCY7Fra/view?usp=sharing)
 
 ### Screenshots:
 1. **Web Extension UI**
    ![Gap Mode](![webextensionui](https://github.com/user-attachments/assets/e6b1b800-d4dc-4cb1-8da4-e3782c029acf))
-   *Figure 2: Dummy packets sent during gap mode to mimic burst activity.*
-2. **Gap Mode in Action**
-   ![Gap Mode](path/to/gap-mode-image.png)
-   *Figure 2: Dummy packets sent during gap mode to mimic burst activity.*
-
-3. **Burst Mode in Action**
-   ![Burst Mode](path/to/burst-mode-image.png)
-   *Figure 3: Metrics for real and dummy packets during burst mode.*
+   *The above picture depicts the interface of the web extension, showing the total number of dummy packets sent between burst/gap mode, the number of packets intercepted, and an option to change the padding intensity.*
+2. **Console Log**
+   ![Gap Mode](![ConsoleLog](https://github.com/user-attachments/assets/0347e457-e9a9-438b-afa9-e7dcdc63367d))
+   *The above screen shot depicts the console log of the extension, showing when the program switches states between bust and gap mode. The screen shot also shows the data of the randomized dummy packets sent and the delays set by the histogram for the dummy packets to be sent.*
 
 ---
 
