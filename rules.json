@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [{
+              "key": "padding",
+              "value": "true"
+            }]
+          }     
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": ["xmlhttprequest", "sub_frame"]
+    }
+  }
+]

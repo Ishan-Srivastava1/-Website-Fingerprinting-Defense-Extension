@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adaptive Padding Defense</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .container {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .settings-group {
+            margin-bottom: 15px;
+        }
+
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .intensity-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="range"] {
+            flex-grow: 1;
+        }
+
+        .metric {
+            margin: 10px 0;
+            padding: 8px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .metric-value {
+            font-weight: bold;
+            color: #2196F3;
+        }
+
+        .state-metrics {
+            margin-left: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Settings</h3>
+        <div class="settings-group">
+            <div class="toggle-switch">
+                <input type="checkbox" id="enableToggle">
+                <label for="enableToggle">Enable Extension</label>
+            </div>
+            <div class="intensity-control">
+                <label for="paddingIntensity">Padding Intensity:</label>
+                <input type="range" id="paddingIntensity" min="1" max="5" value="3">
+                <span id="intensityValue">3</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>Performance Metrics</h3>
+        <div class="metric">
+            <div>Total Dummy Packets: <span id="dummyPacketsSent" class="metric-value">0</span></div>
+            <div class="state-metrics">
+                <div>Burst State: <span id="dummyPacketsBurst" class="metric-value">0</span></div>
+                <div>Gap State: <span id="dummyPacketsGap" class="metric-value">0</span></div>
+            </div>
+        </div>
+        <div class="metric">
+            Real Packets Intercepted: <span id="realPacketsIntercepted" class="metric-value">0</span>
+        </div>
+    </div>
+    <script src="popup.js" type="module" defer></script>
+</body>
+</html>

@@ -1,2 +1,1 @@
-#  Website Fingerprinting Defense Extension
- 
+# Adaptive-Padding-to-Defend-against-Website-Fingerprinting
