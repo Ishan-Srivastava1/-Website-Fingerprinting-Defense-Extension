@@ -94,12 +94,14 @@ Watch the extension in action:
 [Video Demo on Google Drive](https://drive.google.com/file/d/1RCfhdpTTXbMISwSKdzAejSZ_0PCY7Fra/view?usp=sharing)
 
 ### Screenshots:
-1. **Web Extension UI**
-   ![Gap Mode](![webextensionui](https://github.com/user-attachments/assets/e6b1b800-d4dc-4cb1-8da4-e3782c029acf))
+
+1. **Web Extension UI**  
+   ![Web Extension UI](https://github.com/user-attachments/assets/e6b1b800-d4dc-4cb1-8da4-e3782c029acf)  
    *The above picture depicts the interface of the web extension, showing the total number of dummy packets sent between burst/gap mode, the number of packets intercepted, and an option to change the padding intensity.*
-2. **Console Log**
-   ![Gap Mode](![ConsoleLog](https://github.com/user-attachments/assets/0347e457-e9a9-438b-afa9-e7dcdc63367d))
-   *The above screen shot depicts the console log of the extension, showing when the program switches states between bust and gap mode. The screen shot also shows the data of the randomized dummy packets sent and the delays set by the histogram for the dummy packets to be sent.*
+
+2. **Console Log**  
+   ![Console Log](https://github.com/user-attachments/assets/0347e457-e9a9-438b-afa9-e7dcdc63367d)  
+   *The above screenshot depicts the console log of the extension, showing when the program switches states between burst and gap mode. The screenshot also shows the data of the randomized dummy packets sent and the delays set by the histogram for the dummy packets to be sent.*
 
 ---
 
